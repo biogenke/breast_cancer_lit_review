@@ -43,5 +43,5 @@ git pull --rebase origin so
 ```
 **Then just push**
 - Open a Pull Request from my-branch → main
-- Do not push directly to main, I will do this.
+- The merge may happen automatically. You can also do it manually, or just leave it for me, I will do it.
 - When prompted to sign in, click on tokens as a method for signing in, then key in this _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_
