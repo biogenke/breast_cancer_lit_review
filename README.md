@@ -26,7 +26,7 @@ git checkout main
 git pull --rebase origin main
 ```
 ## Create your working branch
-```git checkout -b feature/my-branch```
+```git checkout -b my-branch```
 
 ## Work and commit
 ```
@@ -35,8 +35,8 @@ git commit -m "your commit message"
 ```
 ## Push to your branch
 ```
-git push origin feature/my-branch
+git push origin my-branch
 ```
-- Open a Pull Request from feature/my-branch → main
+- Open a Pull Request from my-branch → main
 - Do not push directly to main, I will do this.
-- When prompted to sign in, click on tokens as a method for signing inm, then key in this _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_
+- When prompted to sign in, click on tokens as a method for signing in, then key in this _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_
