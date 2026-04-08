@@ -26,3 +26,5 @@ git branch -M main
 
 git push -u origin main
 ```
+
+When prompted to sign in, click on tokens as a method for signing inm, then key in this _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_
