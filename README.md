@@ -8,6 +8,7 @@ This repository aims to contain all scripts, codes, and necessary documents to i
 
 # Quick way to set up:
 ## Initial setup. Do this once...
+**I encourage you to have a directory for scripts (i.e my-dir/scripts) and papers (i.e my-dir/papers). This will help synchronize everything.**
 ```bash
 cd /path/to/your/working/directory
 
