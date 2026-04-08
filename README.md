@@ -37,6 +37,11 @@ git commit -m "your commit message"
 ```
 git push origin my-branch
 ```
+## Before push, ensure your locate branch has an update of your remote:
+```
+git pull --rebase origin so
+```
+**Then just push**
 - Open a Pull Request from my-branch → main
 - Do not push directly to main, I will do this.
 - When prompted to sign in, click on tokens as a method for signing in, then key in this _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_
