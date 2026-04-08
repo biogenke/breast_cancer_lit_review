@@ -6,7 +6,8 @@ This repository aims to contain all scripts, codes, and necessary documents to i
 - I encourage everyone to name their script files using their initials. For instance, ```_so.R_``` for Steve Odette, etc. This would, alongside other metadata, help us track which file belongs to whom.
 
 
-## Quick way to set up:
+# Quick way to set up:
+## Initial setup. Do this once...
 ```bash
 cd /path/to/your/working/directory
 
@@ -15,16 +16,27 @@ git init
 git remote add origin https://github.com/biogenke/breast_cancer_lit_review.git
 
 git config --global user.email "biogenke@gmail.com"
-
 git config --global user.name "biogenke"
 
-git add .
-
-git commit -m "your commit message."
-
 git branch -M main
-
-git push -u origin main
 ```
+## Start from the latest main
+```
+git checkout main
+git pull --rebase origin main
+```
+## Create your working branch
+```git checkout -b feature/my-branch```
 
-When prompted to sign in, click on tokens as a method for signing inm, then key in this _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_
+## Work and commit
+```
+git add .
+git commit -m "your commit message"
+```
+## Push to your branch
+```
+git push origin feature/my-branch
+```
+- Open a Pull Request from feature/my-branch → main
+- Do not push directly to main, I will do this.
+- When prompted to sign in, click on tokens as a method for signing inm, then key in this _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_
