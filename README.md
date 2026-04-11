@@ -38,7 +38,7 @@ git commit -m "your commit message"
 ```
 git push origin my-branch
 ```
-## Before push, ensure your locate branch has an update of your remote:
+## Before push, ensure your local branch has an update of your remote:
 ```
 git pull --rebase origin so
 ```
