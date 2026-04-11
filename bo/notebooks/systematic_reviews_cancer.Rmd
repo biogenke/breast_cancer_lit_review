@@ -1,5 +1,5 @@
 ---
-title: "Afrigen Kenya Scholars Analysis Notebook"
+title: "Breast cancer Literature Review"
 author: "Bonface Onyango"
 date: "`r Sys.Date()`"
 output: html_notebook
@@ -53,7 +53,7 @@ packageVersion("litsearchr")
 -   Query: ((medication) AND (CBT)) AND (phobia)
 
 ```{r}
-df_pubmed<-import_results(file="../pubmed-breastcanc-set.nbib")
+df_pubmed<-import_results(file="../papers/pubmed-breastcanc-set.nbib")
 df_pubmed <- as.data.frame(df_pubmed)
 head(df_pubmed)
 ```
@@ -200,7 +200,7 @@ min_n=2)
 # Stop words
 
 ```{r}
-clinpsy_stopwords <- read_lines("../clin_psy_stopwords.txt")
+clinpsy_stopwords <- read_lines("../papers/clin_psy_stopwords.txt")
 clinpsy_stopwords
 ```
 
