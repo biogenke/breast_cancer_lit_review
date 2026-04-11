@@ -311,11 +311,4 @@ selected_terms <- c(selected_terms, extra_terms)
 selected_terms
 ```
 
-# Optional: GitHub installs
-
-library(devtools) \# install_github("elizagrames/litsearchr",
-ref="main") library(litsearchr)
-
-# Ensure plots display in notebook
-
-options(jupyter.plot_mimetypes = c("image/png", "image/svg+xml"))
+# 
