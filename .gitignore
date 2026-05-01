@@ -1,1 +1,4 @@
 Naive_search_results/*.xlsx
+*.xlsx
+Naive_search_results/*.xlsx
+*.nbib
