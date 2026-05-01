@@ -28,7 +28,7 @@ library(readr)
 library(devtools)
 ```
 
-## Intall lisearch
+## Install lisearch
 
 ```{r}
 #uncomment or install in r env
@@ -40,23 +40,40 @@ library(devtools)
 library(litsearchr)
 ```
 
+## Litsearch version
+
 ```{r}
 packageVersion("litsearchr")
 ```
 
-# Pubmed search page
+# Search query
 
 -   <https://pubmed.ncbi.nlm.nih.gov/advanced/>
 
--   search terms (medication) AND (CBT) AND (phobia)
+-   ​"breast cancer" AND (Algeria OR Angola OR Benin OR Botswana OR
+    “Burkina Faso” OR Burundi OR “Cape Verde” OR Cameroon OR “Central
+    African Republic” OR Chad OR Comoros OR “Democratic Republic of the
+    Congo” OR “Republic of the Congo” OR Djibouti OR Egypt OR
+    “Equatorial Guinea” OR Eritrea OR Eswatini OR Ethiopia OR Gabon OR
+    Gambia OR Ghana OR Guinea OR “Guinea-Bissau” OR “Ivory Coast” OR
+    Kenya OR Lesotho OR Liberia OR Libya OR Madagascar OR Malawi OR Mali
+    OR Mauritania OR Mauritius OR Morocco OR Mozambique OR Namibia OR
+    Niger OR Nigeria OR Rwanda OR “Sao Tome and Principe” OR Senegal OR
+    Seychelles OR “Sierra Leone” OR Somalia OR “South Africa” OR “South
+    Sudan” OR Sudan OR Tanzania OR Togo OR Tunisia OR Uganda OR Zambia
+    OR Zimbabwe) AND (Europe\* OR \*America\* OR Australia\* ) AND
+    (genetics OR environment OR healthcare) AND (incidence OR gene\* OR
+    clinical\* OR treatment\* OR and survival\*)
 
--   Query: ((medication) AND (CBT)) AND (phobia)
+## Loading and inspection of results
 
 ```{r}
 df_pubmed<-import_results(file="../papers/pubmed-breastcanc-set.nbib")
 df_pubmed <- as.data.frame(df_pubmed)
 head(df_pubmed)
 ```
+
+## Number of articles -\> 394
 
 ```{r}
 nrow(df_pubmed)
@@ -66,6 +83,8 @@ nrow(df_pubmed)
 #We can take a look at the first few.
 df_pubmed[1:3,]
 ```
+
+## Column names
 
 ```{r}
 # column names
@@ -99,7 +118,7 @@ df_pubmed[2, "keywords"]
 is.null(df_pubmed[["keywords"]])     # checks if entire column is NULL
 ```
 
-# Check null values -\>193
+# Articles with no keywords -\>193
 
 ```{r}
 sum(sapply(df_pubmed$keywords, is.null))
@@ -112,7 +131,10 @@ sum(sapply(df_pubmed$keywords, is.null))
 extract_terms(keywords=df_pubmed[, "keywords"], method="tagged")
 ```
 
-# Extract keywords
+# Extract keywords -\> cleaned
+
+-   The keywords had new lines and we had to reformat it before
+    processding
 
 ```{r}
 library(dplyr)
@@ -166,7 +188,7 @@ keywords_extracted <- extract_terms(
 keywords_extracted[1:20]
 ```
 
-## Tagged keywords -\> min1
+## Tagged keywords -\> with \>=1 word -\> 117
 
 ```{r}
 keywords_extracted_min_1 <- extract_terms(
@@ -174,7 +196,7 @@ keywords_extracted_min_1 <- extract_terms(
   method = "tagged",
   min_n = 1
 )
-
+print(length(keywords_extracted_min_1))
 # --- Step 4: Preview ---
 keywords_extracted_min_1[1:20]
 ```
@@ -193,20 +215,36 @@ keywords_extracted[1:20]
 # Tittle search -\>105
 
 ```{r}
-extract_terms(text=df_pubmed[, "title"], method="fakerake", min_freq=3,
-min_n=2)
+terms <- extract_terms(
+  text = df_pubmed[, "title"],
+  method = "fakerake",
+  min_freq = 3,
+  min_n = 2
+)
+
+length(terms)
 ```
 
 # Stop words
 
 ```{r}
 clinpsy_stopwords <- read_lines("../papers/clin_psy_stopwords.txt")
+
+print(length(clinpsy_stopwords))
+
 clinpsy_stopwords
 ```
 
 ```{r}
+# english stop words
+get_stopwords("English")
+cat("Number of stopwords:", length(get_stopwords("English")), "\n")
+```
+
+```{r}
 all_stopwords <- c(get_stopwords("English"), clinpsy_stopwords)
-all_stopwords
+print(length(all_stopwords))
+head(all_stopwords, 10)
 ```
 
 # Keywords from tittle after removing stop words -\>78
@@ -218,15 +256,19 @@ method="fakerake",
 min_freq=3, min_n=2,
 stopwords=all_stopwords
 )
-title_terms
+print(length(title_terms))
+head(title_terms,10)
 ```
 
-## Keywords + title terms
+## Keywords + title terms -\>181
 
 ```{r}
 terms <- unique(c(keywords_extracted_min_1, title_terms))
-terms
+print(length(terms))
+head(terms,10)
 ```
+
+# Network analysis
 
 ```{r}
 docs <- paste(df_pubmed[, "title"], df_pubmed[, "abstract"])
