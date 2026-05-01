@@ -1,0 +1,87 @@
+PMID- 20280667
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20100318
+LR  - 20181201
+IS  - 0027-8874 (Print)
+IS  - 0027-8874 (Linking)
+VI  - 7
+IP  - 2
+DP  - 1946 Oct
+TI  - Paths of gene action in mammary-tumor development in mice.
+PG  - 79-85
+FAU - HESTON, W E
+AU  - HESTON WE
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - J Natl Cancer Inst
+JT  - Journal of the National Cancer Institute
+JID - 7503089
+SB  - OM
+MH  - Animals
+MH  - *Breast Neoplasms
+MH  - *Genetic Phenomena
+MH  - *Heredity
+MH  - Humans
+MH  - Mice
+MH  - Neoplasms/*genetics
+MH  - *Neoplasms, Experimental
+OID - CLML: 4712:363h
+OTO - NLM
+OT  - *BREAST/cancer
+OT  - *CANCER/experimental
+OT  - *CANCER/heredity
+OT  - *HEREDITY/mechanism
+OT  - *TUMORS/experimental
+EDAT- 1946/10/01 00:00
+MHDA- 2016/11/23 06:00
+CRDT- 2010/03/19 06:00
+PHST- 2010/03/19 06:00 [entrez]
+PHST- 1946/10/01 00:00 [pubmed]
+PHST- 2016/11/23 06:00 [medline]
+PST - ppublish
+SO  - J Natl Cancer Inst. 1946 Oct;7(2):79-85.
+
+PMID- 21024835
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20101028
+LR  - 20181201
+IS  - 0008-5472 (Print)
+IS  - 0008-5472 (Linking)
+VI  - 6
+DP  - 1946 May
+TI  - Relationship of the inherited susceptibility and the inherited hormonal influence 
+      in the development of mammary cancer in mice.
+PG  - 235-9
+FAU - BITTNER, J J
+AU  - BITTNER JJ
+FAU - HUSEBY, R A
+AU  - HUSEBY RA
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Cancer Res
+JT  - Cancer research
+JID - 2984705R
+SB  - OM
+MH  - Animals
+MH  - *Breast Neoplasms
+MH  - *Genetic Predisposition to Disease
+MH  - Humans
+MH  - Mice
+MH  - Neoplasms/*etiology
+OID - CLML: 4610:1088s1
+OTO - NLM
+OT  - *BREAST/cancer
+OT  - *CANCER/etiology and pathogenesis
+OT  - *CANCER/experimental
+EDAT- 1946/05/01 00:00
+MHDA- 1946/05/01 00:01
+CRDT- 2010/10/29 06:00
+PHST- 2010/10/29 06:00 [entrez]
+PHST- 1946/05/01 00:00 [pubmed]
+PHST- 1946/05/01 00:01 [medline]
+PST - ppublish
+SO  - Cancer Res. 1946 May;6:235-9.

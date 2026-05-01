@@ -1,0 +1,83 @@
+PMID- 20240430
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20100318
+LR  - 20181201
+IS  - 0027-8874 (Print)
+IS  - 0027-8874 (Linking)
+VI  - 7
+IP  - 4
+DP  - 1947 Feb
+TI  - Segregation mammary cancer to no mammary cancer in the Marsh albino strain of 
+      mice.
+PG  - 183-8
+FAU - MURRAY, W S
+AU  - MURRAY WS
+FAU - WARNER, S G
+AU  - WARNER SG
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - J Natl Cancer Inst
+JT  - Journal of the National Cancer Institute
+JID - 7503089
+SB  - OM
+MH  - Animals
+MH  - *Breast Neoplasms
+MH  - *Heredity
+MH  - Humans
+MH  - Mice/genetics
+MH  - Neoplasms/*genetics
+MH  - *Wetlands
+OID - CLML: 4713:91r
+OTO - NLM
+OT  - *BREAST/cancer
+OT  - *CANCER/heredity
+OT  - *MICE/genetics
+EDAT- 1947/02/01 00:00
+MHDA- 2011/04/13 06:00
+CRDT- 2010/03/19 06:00
+PHST- 2010/03/19 06:00 [entrez]
+PHST- 1947/02/01 00:00 [pubmed]
+PHST- 2011/04/13 06:00 [medline]
+PST - ppublish
+SO  - J Natl Cancer Inst. 1947 Feb;7(4):183-8.
+
+PMID- 18898848
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20081016
+LR  - 20201005
+IS  - 0368-6698 (Print)
+IS  - 0368-6698 (Linking)
+VI  - 2
+IP  - 11
+DP  - 1947 Nov
+TI  - [The genesis of breast cancer inheritance in the mouse].
+PG  - 511
+FAU - BITTNER, J J
+AU  - BITTNER JJ
+LA  - ger
+PT  - Journal Article
+TT  - Die Genese der Vererbung des Mamma-Krebses bei der Maus.
+PL  - Austria
+TA  - Krebsarzt
+JT  - Der Krebsarzt
+JID - 0251004
+SB  - OM
+MH  - *Breast Neoplasms
+MH  - *Heredity
+MH  - Humans
+MH  - Neoplasms/*genetics
+OID - CLML: 4814:364k
+OTO - NLM
+OT  - *BREAST/cancer
+OT  - *CANCER/heredity
+EDAT- 1947/11/01 00:00
+MHDA- 2008/11/01 09:00
+CRDT- 1947/11/01 00:00
+PHST- 1947/11/01 00:00 [pubmed]
+PHST- 2008/11/01 09:00 [medline]
+PHST- 1947/11/01 00:00 [entrez]
+PST - ppublish
+SO  - Krebsarzt. 1947 Nov;2(11):511.
