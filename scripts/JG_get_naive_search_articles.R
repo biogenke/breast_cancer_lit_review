@@ -6,6 +6,8 @@
 # Ken is downloading from 1946 to 2014 December 31st
 # Combine this into a   .nbib file to share with the team
 
+# NOTE: The script is Redundant so that I can look into each file separately.
+
 # Load required package
 library(litsearchr)
 library(dplyr)
